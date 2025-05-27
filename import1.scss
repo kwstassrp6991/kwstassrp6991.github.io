@@ -1,0 +1,13 @@
+//_import1.scss
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+}
+@mixin border{
+    border-bottom:  1px solid rgb(25, 249, 253);
+    border-radius: 10%;
+}
+@mixin width-height{
+    width: 20px;
+    height: 20px;
+}
