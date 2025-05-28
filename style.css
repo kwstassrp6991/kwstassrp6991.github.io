@@ -24,7 +24,7 @@ header {
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   min-width: 100vw;
   background-image: linear-gradient(to top, lightblue, lightgrey);
 }
