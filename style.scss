@@ -189,7 +189,7 @@ h1{
     border-bottom: 2px dashed rgb(0, 232, 112);
 }
 
-@media screen and (min-width:600px){
+@media screen and (max-width:600px){
 .menu{
         height: 105px;
         flex-direction: row;
