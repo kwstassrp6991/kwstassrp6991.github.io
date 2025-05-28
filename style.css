@@ -90,6 +90,7 @@ aside {
   flex: 1;
   display: grid;
   grid-template-rows: auto;
+  grid-template-columns: auto;
   grid-template-areas: "head aside" "main aside" "main2 aside2 " "footer footer2";
   gap: 5px;
 }

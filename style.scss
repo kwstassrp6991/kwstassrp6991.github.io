@@ -85,6 +85,7 @@ aside{
     flex: 1;
     display: grid;
     grid-template-rows:auto;
+    grid-template-columns: auto;
     grid-template-areas: 
     "head aside"
     "main aside"
