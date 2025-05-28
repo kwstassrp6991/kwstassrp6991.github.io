@@ -21,7 +21,7 @@ header{
 }
 .container{
     @include flex();
-    min-height: 100vh;
+    height: 100vh;
     min-width:100vw;
     background-image: linear-gradient(to top, lightblue,lightgrey);
     .ty{
