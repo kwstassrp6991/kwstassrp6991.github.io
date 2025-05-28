@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+  background-image: linear-gradient(to top, grey, transparent);
+}
+
+h4 {
+  color: #f02d2d;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(to top, lightblue, lightgrey);
+}
+
+.container .ty {
+  width: 100%;
+  height: 20px;
+  border: 1px solid;
+  position: relative;
+  bottom: 5px;
+}
+
+.container .ty .ball {
+  position: absolute;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  border: 1px solid red;
+  background-color: red;
+  animation: move linear infinite;
+  animation-duration: 5s;
+}
+
+.container .ty .ball .trigen {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-top-left-radius: 100%;
+  position: absolute;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+    transform: rotateZ(-3600deg);
+  }
+  49.9% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    left: 97.5vw;
+    transform: rotateZ(45deg);
+  }
+  to {
+    left: 0;
+    transform: rotateZ(-3600deg);
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deuteros-container {
+  flex: 1;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-template-areas: "head aside" "main aside" "main2 aside2 " "footer footer2";
+  gap: 5px;
+}
+
+.ekpaideush {
+  grid-area: head;
+  border-bottom: 2px solid red;
+  border-radius: 10px;
+}
+
+.Epaggelmatikh-empeiria {
+  grid-area: main;
+  border-bottom: 2px solid red;
+  border-radius: 10px;
+}
+
+.profil {
+  grid-area: main2;
+  border-bottom: 2px solid red;
+  border-radius: 10px;
+}
+
+.pistopoihtika {
+  grid-area: footer;
+  border-bottom: 2px solid red;
+  border-radius: 10px;
+}
+
+.proswpika-stoixeia {
+  grid-area: aside;
+  border-bottom: 2px solid red;
+  border-radius: 10px;
+}
+
+.texnikes-deksiothtes {
+  grid-area: aside2;
+  border-bottom: 2px solid red;
+  border-radius: 10px;
+}
+
+.glwsses {
+  grid-area: footer2;
+  border-bottom: 2px solid red;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*header*/
+.menu img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+  background-color: #00d5ff;
+}
+
+h1 {
+  background-color: lightgrey;
+}
+
+.menu {
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgrey;
+  gap: 20px;
+}
+
+.comu {
+  color: #e62b2b;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #19f9fd;
+  border-radius: 10%;
+  gap: 5px;
+}
+
+.info a {
+  place-self: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #19f9fd;
+  border-radius: 10%;
+  gap: 5px;
+}
+
+.ig-fb {
+  display: flex;
+  gap: 5px;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px dashed #00e870;
+}
+
+@media screen and (min-width: 600px) {
+  .menu {
+    height: 105px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    position: relative;
+  }
+  .menu .first {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+  .info {
+    border: 0;
+    gap: 20px;
+  }
+  .social img {
+    width: 40px;
+    height: 40px;
+    background-color: #0084ff;
+    zoom: 0.7;
+  }
+  .social {
+    display: flex;
+    border: 0;
+  }
+  .ig-fb {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.lista-empeirias ul,
+.lista-pistopoihtikwn ul {
+  list-style-type: circle;
+}
